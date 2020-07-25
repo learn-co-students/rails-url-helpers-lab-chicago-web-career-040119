@@ -1,0 +1,21 @@
+<h1><%= @student.to_s %></h1>
+
+<div class="">
+
+<form class="" action='/students/<%= @student.id %>' method="post">
+  <input type="hidden" name="_method" value="PATCH">
+
+
+<h3>Active</h3>
+<label class="switch">
+  <input type="checkbox" name="active" value=true>
+  <span class="slider round"></span>
+</label>
+</div>
+<br>
+<br>
+<div class="">
+  <input type="submit" value="Submit">
+</div>
+
+</form>
